@@ -1,3 +1,4 @@
-function next() {
-  document.getElementById("page2").style.display = "block";
+function go(n) {
+  document.querySelectorAll("div").forEach(d => d.style.display = "none");
+  document.getElementById("page" + n).style.display = "block";
 }
